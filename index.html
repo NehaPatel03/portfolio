@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/69d01d5627.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Portfolio</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                
+                <h1>Hi, I'm Neha Patel</h1>
+                <p>Second Year I.T UnderGrad Student</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <!-- your image -->
+                    <img src="./me.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I am a second-year IT undergraduate student with a strong enthusiasm for technology and innovation. Driven by a passion for solving real-world problems, I am constantly exploring new tools and technologies to enhance my skills in software development, web design, and problem-solving.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" style = "margin-left:40%;"  onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab " id="skills">
+                        <ul>
+                            <li class="list-heading">Languages</li>
+                            <li class="list-subheading">HTML, CSS, JavaScript, Java, C, C++, Python</li>
+                            <li class="list-heading">Libraries/Framework</li>
+                            <li class="list-subheading">NumPy, Pandas, Matplotlib, jQuery, Tailwind CSS</li>
+                            <li class="list-heading">Database</li>
+                            <li class="list-subheading">MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li class="list-heading">Dwarkadas.J Sanghvi College of Engineering </br><span> BACHELOR OF TECHNOLOGY IN INFORMATION TECHNOLOGY </span> </li>
+                            <li class="list-subheading">(Aug 2023 - Jul 2027)</li>
+                            <li class="list-subheading">CGPA : 9.68/10</li>
+                            <li class="list-heading">Sardar Vallabhbhai Patel Vidyalaya and Jr. College</li>
+                            <li class="list-subheading">(Aug 2022 - Apr 2023)</li>
+                            <li class="list-subheading">HSC grade : 85.67%</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <button id="resume" class="btn"><a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:aedd9a20-3f76-4d42-b7de-c3f256d6843d">Resume</a></button>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="./Mentorship.png">
+                    <div class="layer">
+                        <h3>MentorConnect</h3>
+                        <p>Developed a mentorship platform, enabling students to book guidance sessions with professors based on their preferred dates and times using HTML,CSS and JavaScript</p>
+                        <a href="https://hitakshigabani21.github.io/codepirates/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div> 
+                </div>
+                <div class="project">
+                    <img src="./calendar.png">
+                    <div class="layer">
+                        <h3>Events Calendar</h3>
+                        <p>Developed an interactive events calendar that allows users to add, view, and manage events or tasks on specific dates, with local storage implementation to persist events even after browser refresh, eliminating the need for server-side storage using html,css and javascript.</p>
+                        <a href="https://compute-task2-calender.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div> 
+                </div>
+            </div>
+            <div class="project-list">
+                <div class="project">
+                    <img src="./weather-app.png">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Developed a Weather App that provides real-time weather information by integrating with the OpenWeatherMap API to display details like temperature, weather conditions, humidity, and wind speed, while utilizing Leaflet.js to show an interactive map with dynamic markers indicating the location of the searched city. </p>
+                        <a href=" https://nehapatel03.github.io/Weather-App/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div> 
+                </div>
+                <div class="project">
+                    <img src="./rock-paper-scissors.png">
+                    <div class="layer">
+                        <h3>Rock paper scissor</h3>
+                        <p>It is a simple hand game played between two players. Each player simultaneously chooses one of three options: rock, paper, or scissors.Made using html,css and javascript.</p>
+                        <a href="https://nehapatel03.github.io/Rock_Paper_Scissors_Game/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div> 
+                </div>
+                <div class="project">
+                    <img src="./simon-game.png">
+                    <div class="layer">
+                        <h3>Simon Game</h3>
+                        <p>Simon is a memory game with a circular device that lights up in different colors and plays sounds in a specific sequence. Players must repeat the sequence in the same order.Made using html,css and jQuery.</p>
+                        <a href="https://nehapatel03.github.io/Simon_Game/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div> 
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Contact  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> nehapatel3305@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9863456687</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/neha-patel-a70176306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/neha_03.?igsh=ZHBvYXl0MHZ5djlo"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name*" required>
+                        <input type="email" name="email" placeholder="Your Email*" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        var sidemenu = document.getElementById("sidemenu");
+        function opentab(tabname){
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px"
+        }
+        
+
+    </script>
+</body>
+</html>
