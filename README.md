@@ -19,6 +19,9 @@ This is a personal portfolio website showcasing my projects, skills, and profess
 ## Getting Started 
 
 git clone https://github.com/yourusername/your-portfolio.git
+
 cd your-portfolio
+
 npm install
+
 npm start
